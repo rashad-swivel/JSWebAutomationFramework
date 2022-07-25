@@ -1,0 +1,58 @@
+{
+  "name": "webdriverio-cucumber-pom-boilerplate",
+  "version": "1.0.0",
+  "description": "A WebdriverIO & Cucumber Boilerplate based on Page Object Model",
+  "scripts": {
+    "open-Allure": "./node_modules/.bin/allure generate ./Reports/allure-results --clean && allure open",
+    "test": "npx wdio wdio.conf.js --parallel=false",
+    "test-dev": "set NODE_ENV=dev && npx wdio wdio.conf.js --parallel=false",
+    "test-uat1": "set NODE_ENV=uat1 && npx wdio wdio.conf.js --parallel=false"
+  },
+  "keywords": [
+    "webdriverio",
+    "cucumber",
+    "page object model",
+    "pom"
+  ],
+  "author": "Rashad Rouzdeen",
+  "license": "Swivel Tech",
+  "devDependencies": {
+    "@rpii/wdio-html-reporter": "^7.7.1",
+    "@wdio/allure-reporter": "^7.19.5",
+    "@wdio/cli": "^7.19.5",
+    "@wdio/cucumber-framework": "^7.19.5",
+    "@wdio/local-runner": "^7.19.5",
+    "@wdio/selenium-standalone-service": "^6.10.4",
+    "@wdio/spec-reporter": "^7.19.5",
+    "@wdio/sync": "^7.19.5",
+    "chromedriver": "^96.0.0",
+    "cucumber-html-reporter": "5.2.0",
+    "eslint": "^8.6.0",
+    "node-key-sender": "^1.0.11",
+    "protractor-cucumber-framework": "^6.2.1",
+    "selenium-standalone": "^6.20.1",
+    "wdio-chromedriver-service": "^7.3.2",
+    "wdio-cucumber-parallel-execution": "^3.6.14",
+    "wdio-cucumberjs-json-reporter": "1.2.0",
+    "wdio-screenshot": "^0.1.3",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "webdriverio": "^7.19.5"
+  },
+  "dependencies": {
+    "@wdio/codemod": "^0.12.0",
+    "allure-commandline": "^2.13.8",
+    "core-js": "^3.20.2",
+    "cucumber": "^7.0.0-rc.0",
+    "dotenv": "^16.0.0",
+    "express-fileupload": "^1.2.0",
+    "jscodeshift": "^0.13.1",
+    "keys": "^0.1.2",
+    "multer": "^1.4.2",
+    "npm-cli": "^0.1.0",
+    "path": "^0.12.7",
+    "pretty": "^2.0.0",
+    "react-draggable": "^4.4.4",
+    "rxjs": "^7.4.0",
+    "upload-file": "^1.0.0"
+  }
+}
